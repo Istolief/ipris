@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="lang" content="ru">
+
+	<title>{% block title %}{% endblock %}</title>
+	<link href="{% static 'ipris_app/lib/node_modules/bootstrap/dist/css/bootstrap.css' %}" rel="stylesheet">
+    {% block css %}
+
+    {% endblock %}
+	<link rel="stylesheet" media="all" href="{% static 'ipris_app/css/base.css' %}"/>
+</head>
+<body>
+	{% block content %}
+
+	{% endblock %}
+	{% block scripts %}
+	{% endblock %}
+	<script src="{% static 'ipris_app/lib/node_modules/jquery/dist/jquery.min.js' %}"></script>
+	<script src="{% static 'ipris_app/lib/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'ipris_app/lib/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
