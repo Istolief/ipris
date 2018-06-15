@@ -25,7 +25,7 @@ SECRET_KEY = '=-0l+2acp8nk627+3#9w6!$0!m!)+lzdyruu4xnu-+rsv%8e+r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -128,4 +128,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'ipris_app/static/'
