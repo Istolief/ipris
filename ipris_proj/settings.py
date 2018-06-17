@@ -79,10 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':         'ipris_db',
-        'USER':         'Istolief',
-        'PASSWORD':     'ipris_111',
-        'HOST':         'Istolief.mysql.pythonanywhere-services.com',
-        'PORT':         '13306',
+        'USER':         'root',
+        'PASSWORD':     '',
+        'HOST':         'localhost',
+        'PORT':         '3306',
         'CONN_MAX_AGE': 1000,
         'OPTIONS':      {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'; SET innodb_strict_mode=1",
